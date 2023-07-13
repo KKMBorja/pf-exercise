@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'IM Fell French Canon SC', serif;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'IM Fell French Canon', serif;
+}
+/* Header */
+.header{
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(3,4,7, 0.48), rgba(5, 10, 30, 0.48)),
+    url('../images/pexels-rdne-stock-project-4920856.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+.hero_brandname{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+.hero__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 7%;
+    background-color: rgba(36, 35, 35, 0.376);
+}
+
+
+.hero__nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.hero__nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header__heading{
+   position: absolute;
+    /* background-color: green; */
+    top:75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.header__heading--h1{
+    font-size: 70px;
+    margin-top: 10px;
+    color: #D79B7A;
+}
+
+.header__heading--h2{
+    font-size: 20px;
+    color: #F9F9FF;
+}
+
+
+  /* About */
+.about{
+    height: 80vh;
+    background-color: #D79B7A;
+    color: #fff;
+    background-image: linear-gradient(rgba(3,4,7, 0.48), rgba(5, 10, 30, 0.48)),
+    url('../images/pexels-marina-m-8356208.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about__heading{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.about__heading--h2{
+    font-size: 60px;
+    padding-top: 6rem;
+}
+
+.about__heading--p{
+    text-align: center;
+}
+
+
+/* Portfolio */
+.portfolio{
+    /* height: 180vh; 1024 x 728 */
+    height: 200vh;
+    padding: 50px;
+    text-align: center;
+    color: #362D2D;
+}
+
+.portfolio__heading--h2{
+ font-size: 60px;
+ margin-top: 1%;
+}
+
+
+.portfolio__container{
+    display: grid;
+    /*two dimensional*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-gap: 40px;
+    /* NOTE TO SELF:  grid-gap: 30px; good for 1024 x 768 screen size*/
+    padding: 5%; 
+    margin-top: 50px;
+}
+
+
+.portfolio__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.portfolio__btn{
+  background-color: #45893A;
+  color: #fff;
+  height: 75px;
+  width: 303px;
+  padding: 2% 5%;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
