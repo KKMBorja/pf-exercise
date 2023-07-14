@@ -16,8 +16,7 @@ p{
 .header{
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(rgba(3,4,7, 0.48), rgba(5, 10, 30, 0.48)),
-    url('../images/pexels-rdne-stock-project-4920856.jpg');
+    background-image: url('../images/pexels-rdne-stock-project-4920856.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -45,7 +44,7 @@ p{
 
 .hero__nav ul li a{
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 18px;
 }
 
@@ -75,8 +74,7 @@ p{
     height: 80vh;
     background-color: #D79B7A;
     color: #fff;
-    background-image: linear-gradient(rgba(3,4,7, 0.48), rgba(5, 10, 30, 0.48)),
-    url('../images/pexels-marina-m-8356208.jpg');
+    background-image: url('../images/pexels-marina-m-8356208.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -104,6 +102,9 @@ p{
     padding: 50px;
     text-align: center;
     color: #362D2D;
+    background-image: url('../images/istockphoto-1396456708-612x612.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .portfolio__heading--h2{
@@ -142,3 +143,76 @@ p{
   font-weight: 700;
   letter-spacing: 2px;
 }
+/* Contact */
+.contact{
+    height: 100vh;
+    color: #5E290C;
+    background-color:#3E3C3C;
+    padding: 5%;
+    background-image: url('../images/Image-by-Dirk-Wouters-from-Pixabay.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact__row{
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__row--left{
+    /* background-color: green;   */
+    flex-basis: 35%;
+    margin-top: 220px;
+}
+
+.contact__heading--h2{
+    font-size: 60px;
+}
+
+.contact__row--left p{
+ margin-top: 30px;
+}
+
+.contact__left--icons{
+    margin-top: 15px;
+}
+
+.contact__row--left p i{
+    color: #20E700;
+}
+
+.contact__left--icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #D9D9D9;
+    /* display: inline-block; */
+}
+
+.contact__btn{
+    display: block;
+    margin: 50px auto;
+    border: 1px solid #2ecc71;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    width: fit-content;
+}
+
+.contact__btn:hover{
+    background-color: #2ecc71;
+}
+
+.contact__btn.contact__btn--1{
+    display:inline-block;
+}
+
+
+
+
+
+.contact__row--right{
+    background-color: rgb(229, 229, 240);
+}
+    
