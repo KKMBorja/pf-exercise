@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KKMVB portfolio site">
     <title>KKMVB PORTFOLIO SITE</title>
     <!-- EXTERNAL STYLES RESOURCES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +17,20 @@
 <body>
 <!-- Header -->
 <header>
-    <div class="header">
+    <div class="header" id="Home">
         <nav class="hero__nav">
             <a href="#" class="hero_brandname">PORTFOLIO</a>
-    <ul>
-        <li><a href="#">Home</a></li>
+    <ul class="menu">
+        <li><a href="#Home">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
         <li><a href="#Contact">Contact</a></li>
     </ul>
 </nav>
+
 <div class="header__heading">
     <h1 class="header__heading--h1">Kathleen Borja</h1>
-    <h2>Freelance Front-End Web Developer</h2>
+    <h2 class="header__heading--h2">Freelance Front-End Web Developer</h2>
 </div>
 
 
@@ -41,7 +43,7 @@
     <div class="about" id="About">
         <div class="about__heading">
             <h2 class="about__heading--h2">ABOUT ME</h2>
-            <p  class="about__heading--p">Insert text here, Mark mumbles and says there there there like where??</p>
+            <p  class="about__heading--p">Lorem Ipsum, Mark mumbles and says there there there like where??</p>
         </div>
         
     </div>
@@ -73,6 +75,9 @@ My Portfolio
 <div class="contact__container">
 <div class="contact__row">
     <div class="contact__row--left">
+        <h2>
+            Kathleen Borja
+        </h2>
         <p><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>
             kathleenkmvb@kodego.co.uk
         </p>
@@ -93,6 +98,9 @@ My Portfolio
         <input type="text" placeholder="Your name">
         <input type="email" placeholder="Your email">
         <textarea name="#" id="#" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <button type="submit" class="contact__btn contact__btn--1">
+        Submit
+    </button>
     </form>
 </div>
 </div>

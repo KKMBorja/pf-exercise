@@ -21,21 +21,30 @@ p{
     background-position: center;
   }
 
+.header__image--sm{
+   /* visibility: hidden;  */
+   display: none; 
+}
+
 .hero_brandname{
     color: #fff;
     font-size: 48px;
     font-weight: 700;
+    text-shadow: 2px 2px 5px #0b0b0b;
+    border-radius:30px; float:center; width: 310px;background-color: rgba(36, 35, 35, 0.376); padding:10px; 
 }
-
 
 .hero__nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3% 7%;
-    background-color: rgba(36, 35, 35, 0.376);
+    padding: 3% 3%;
+    top: -15px;
 }
 
+.menu{
+    border-radius:30px; float:center; width: 450px; background-color: rgba(36, 35, 35, 0.376); padding:10px; 
+}
 
 .hero__nav ul li{
     display: inline-block;
@@ -50,22 +59,24 @@ p{
 
 .header__heading{
    position: absolute;
-    /* background-color: green; */
     top:75%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    border-radius:30px; float:center; width:45%;background-color: rgba(36, 35, 35, 0.376); padding:10px; 
 }
 
 .header__heading--h1{
     font-size: 70px;
     margin-top: 10px;
     color: #D79B7A;
+    text-shadow: 2px 2px 5px #242323;
 }
 
 .header__heading--h2{
     font-size: 20px;
     color: #F9F9FF;
+    text-shadow: 2px 2px 5px #242323
 }
 
 
@@ -102,7 +113,7 @@ p{
     padding: 50px;
     text-align: center;
     color: #362D2D;
-    background-image: url('../images/istockphoto-1396456708-612x612.jpg');
+    background-image: url('../images/coffee-lukas-pixabay.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -163,7 +174,8 @@ p{
 .contact__row--left{
     /* background-color: green;   */
     flex-basis: 40%;
-    margin-top: 220px;
+    margin-top: 210px;
+    transform: rotate(-13deg);
 }
 
 .contact__heading--h2{
@@ -171,7 +183,7 @@ p{
 }
 
 .contact__row--left p{
- margin-top: 30px;
+ margin-top: 10px;
 }
 
 .contact__left--icons{
@@ -192,17 +204,20 @@ p{
 
 .contact__btn{
     display: block;
-    margin: 50px auto;
-    border: 1px solid #2ecc71;
+    margin: 30px auto;
+    border: 1px solid #fff;
+    background-color: #5e290c;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #5E290C;
+    color: #fff;
     width: fit-content;
 }
 
 .contact__btn:hover{
-    background-color: #2ecc71;
+    background-color: #cecece;
+    border: 1px solid #5e290c;
+    color: #5e290c;
 }
 
 .contact__btn.contact__btn--1{
@@ -210,7 +225,7 @@ p{
 }
 
 .contact__row--right{
-    background-color: rgb(229, 229, 240);
+    background-color: none;
 }
 
 form input {
@@ -225,5 +240,52 @@ footer{
     text-decoration: solid;
     color: #5E290C;
     background-color: #d0a28a;
+
+}
+
+/* MEDIA QUERY THAT MARK SAID HAS NOTHING TO DO WITH IT BUT IT DOES */
+@media only screen and (max-width:600px) {
+
+.header{
+background-image: url('../images/pexels-rdne-stock-project-4920852.jpg');
+}
+.header__image--sm{
+    display: block;
+}
+
+.header__image--sm img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+.header__heading{
+    width: 320px;;
+ }
+
+ .portfolio{
+    background-image: url('../images/coffee-lukas-pixabay.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+.portfolio__heading--h2{
+color: #F9F9FF;
+text-shadow: 2px 2px 5px #0b0b0b;
+}
+
+.portfolio__img img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 10px;
+
+}
 
 }
