@@ -108,8 +108,7 @@ p{
 
 /* Portfolio */
 .portfolio{
-    /* height: 180vh; 1024 x 728 */
-    height: 150vh;
+    height: 100%;
     padding: 50px;
     text-align: center;
     color: #362D2D;
@@ -126,10 +125,8 @@ p{
 
 .portfolio__container{
     display: grid;
-    /*two dimensional*/
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     grid-gap: 40px;
-    /* NOTE TO SELF:  grid-gap: 30px; good for 1024 x 768 screen size*/
     padding: 5%; 
     margin-top: 50px;
 }
@@ -167,16 +164,6 @@ p{
     background-position: center;
 }
 
-/* .contact__row{
-  display: flex;
-  flex-direction: row;
-}
-
-.contact__row--left{
-    flex-basis: 40%;
-    margin-top: 200px;
-
-} */
 
 .contact__heading--h2{
     color: #ffffff;
@@ -185,55 +172,6 @@ text-align: center;
 text-shadow: 2px 2px 5px #0b0b0b;
 }
 
-/* .contact__row--left p{
- margin-top: 10px;
-}
-
-.contact__left--icons{
-    margin-top: 15px;
-}
-
-.contact__row--left p i{
-    color: #20E700;
-}
-
-.contact__left--icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: none;
-} */
-
-/* .contact__btn{
-    display: block;
-    margin: 30px auto;
-    border: 1px solid #fff;
-    background-color: #5e290c;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    width: fit-content;
-}
-
-.contact__btn:hover{
-    background-color: #cecece;
-    border: 1px solid #5e290c;
-    color: #5e290c;
-}
-
-.contact__btn.contact__btn--1{
-    display:inline-block;
-}
-
-.contact__row--right{
-    background-color: none;
-    position: relative; float: right;
-}
-
-form input {
-    width: 70%;
-} */
 
 .contact .form-tb {
     column-gap: 40px;
@@ -283,7 +221,7 @@ footer{
 
 }
 
-/* MEDIA QUERY THAT MARK SAID HAS NOTHING TO DO WITH IT BUT IT DOES */
+/* MEDIA QUERY */
 @media only screen and (max-width:600px) {
 
 .header{
